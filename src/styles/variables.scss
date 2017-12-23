@@ -1,0 +1,74 @@
+$site-green: (
+        50: #fbfdf9,
+        100: #C8E6B4,
+        200: #b3d79a,
+        300: #8cc367,
+        400: #7bba51,
+        500: #6caa43,
+        600: #367C2B,
+        700: #21491c,
+        800: #1d4119,
+        900: #183614,
+        A100: #fbfdf9,
+        A200: #d1e7c3,
+        A400: #7bba51,
+        A700: #507e32
+);
+
+$site-blue: (
+        50: #d0eeff,
+        100: #84d2ff,
+        200: #4cbdff,
+        300: #04a3ff,
+        400: #0090e5,
+        500: #007dc6,
+        600: #006aa7,
+        700: #005689,
+        800: #00436a,
+        900: #00304c,
+        A100: #d0eeff,
+        A200: #84d2ff,
+        A400: #0090e5,
+        A700: #005689
+);
+
+$site-orange: (
+        50: #FCCD7E
+);
+$site-red: (
+        50: #ffebee,
+        100: #ffcdd2,
+        200: #F4D9D8,
+        300: #e57373,
+        400: #ef5350,
+        500: #CD2823,
+        600: #e53935,
+        700: #d32f2f,
+        800: #c62828,
+        900: #b71c1c,
+        A100: #ff8a80,
+        A200: #ff5252,
+        A400: #ff1744,
+        A700: #d50000
+);
+
+$subtitle-text-color: #595959;
+$subsection-header-color: #737373;
+$divider-color: #E0E0E0;
+$input-line-color: rgba(0, 0, 0, .12);
+$input-label-color: #282828;
+$background-1: #fff;
+$background-2: #f7f7f7;
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$site-app-primary: mat-palette($site-green);
+$site-app-accent: mat-palette($site-blue);
+$site-app-warn: mat-palette($site-red);
+$site-app-theme: mat-light-theme($site-app-primary, $site-app-accent, $site-app-warn);
+
+$site-app-primary-dark: mat-palette($site-green, 600, 400, 800);
+$site-app-accent-dark: mat-palette($site-blue);
+$site-app-warn-dark: mat-palette($site-red);
+$site-app-theme-dark-primary: mat-light-theme($site-app-primary-dark, $site-app-accent-dark, $site-app-warn-dark);
