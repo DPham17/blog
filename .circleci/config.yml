@@ -24,3 +24,17 @@ jobs:
 
       - run: yarn ng build --prod --build-optimizer --no-progress
       - run: yarn ng test --single-run --no-progress
+
+deployment:
+  staging:
+    branch: master
+    codedeploy:
+      blog:
+        application_root: /
+        region: us-east-1
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: dzu.technology
+            key_pattern: blog-{BRANCH}-{SHORT_COMMIT}
+        deployment_group: circle2ci-blog
