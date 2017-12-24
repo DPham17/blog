@@ -1,4 +1,4 @@
-deployment-job:
+deployment:
   staging:
     branch: master
     codedeploy:
