@@ -10,7 +10,7 @@ import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 
 @Injectable()
 export class AppComponent implements OnInit {
-  title = 'the website';
+  // title = 'the website';
   // name = 'Dzu Pham';
   // profession = 'Programmer at Walmart';
   // education = 'Missouri S&T';
@@ -28,9 +28,12 @@ export class AppComponent implements OnInit {
   ];
   url = this.randomUrl(this.sites);
 
-  myStyle = {
-    'background-image': 'url(' + this.url + ')'
-  };
+  changeBackground(): any {
+    if (!this.url) {
+      this.url = './assets/img/hero.jpg';
+    }
+    return { 'background-image': 'url(' + this.url + ')' };
+  }
 
   constructor(private http: Http) {}
 
@@ -55,8 +58,7 @@ export class AppComponent implements OnInit {
   // }
 
   randomUrl(sites) {
-    const value = Math.floor(Math.random() * 2) + 1 ;
-    console.log(value);
+    const value = Math.floor(Math.random() * sites.length);
     return sites[value];
   }
 }
