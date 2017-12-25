@@ -10,17 +10,17 @@ import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
 
 @Injectable()
 export class AppComponent implements OnInit {
-  // title = 'the website';
-  // name = 'Dzu Pham';
-  // profession = 'Programmer at Walmart';
-  // education = 'Missouri S&T';
-  // major = 'Computer Science';
-  // location = 'Bentonville, Ar';
-  name = 'Name';
-  profession = 'Profession';
-  education = 'Education';
-  major = 'Major';
-  location = 'Location';
+  title = 'the website';
+  name = 'Dzu Pham';
+  profession = 'Programmer at Walmart';
+  education = 'Missouri S&T';
+  major = 'Computer Science';
+  location = 'Bentonville, Ar';
+  // name = 'Name';
+  // profession = 'Profession';
+  // education = 'Education';
+  // major = 'Major';
+  // location = 'Location';
 
   sites = [
     'https://www.bing.com//az/hprichbg/rb/BarHarborCave_EN-US8598700153_1920x1080.jpg',

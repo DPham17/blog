@@ -19,13 +19,11 @@ $height: 250px;
 
 .profile-card {
   background-color: #ECF0F1;
-  width: 415px;
   height: 150px;
   position: relative;
-  box-shadow: 0px 3px 10px gray;
-  margin-left: 5%;
-  margin-top: 25px;
-  z-index: 1;
+	box-shadow: 0px 3px 10px gray;
+	margin: 25px auto 0 5%;
+	z-index: 1;
 
   display: -webkit-flex;
   display: flex;
@@ -34,12 +32,10 @@ $height: 250px;
     background-color: #FCCD7E;
     width: 150px;
     height: 150px;
-    margin-right: 30px;
   }
 
   .contact-info {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 30px auto 30px;
   }
 
 }
