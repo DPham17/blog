@@ -3,10 +3,10 @@ import {Http, Headers, Response, Jsonp} from '@angular/http';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './landing.component.html',
-  styleUrls: [ './landing.component.scss' ]
+  templateUrl: './not-found.component.html',
+  styleUrls: [ './not-found.component.scss' ]
 })
 
 @Injectable()
-export class LandingComponent {
+export class NotFoundComponent {
 }

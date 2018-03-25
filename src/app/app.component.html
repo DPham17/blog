@@ -1,184 +1,24 @@
+<div class="nav-bar">
+  <header>
+    <div>
 
-<!-- Top Screen -->
-<section class="hero">
-  <div class="background-image"  [ngStyle]="changeBackground()"></div>
-  <h1>Under Construction</h1>
-  <h3>Version 0.0.1</h3>
-</section>
+      <!-- Title -->
+      <span class="nav-title">Sandbox</span>
 
-<!-- Main Body -->
-<section class="resume">
+      <!-- Navbar -->
+      <nav>
+        <a class="nav-link" [routerLink]="['']">Home</a>
+        <a class="nav-link" [routerLink]="['/resume']">Resume</a>
+      </nav>
 
-  <h3 class="title">Under Construction!</h3>
-  <hr>
-  <!-- Profile card -->
-  <div class="profile-card">
-    <!-- Profile picture -->
-    <img class="profile-img" src="./assets/img/hero.jpg">
-    <!-- Contact information -->
-    <div class="contact-info">
-      <font size="5"><b>{{name}}</b></font> <br>
-      <font size="3">{{profession}}</font> <br>
-      <font size="2">{{education}} | {{major}}</font> <br>
-      <font size="1">{{location}}</font>
     </div>
-  </div>
+  </header>
+</div>
 
-  <section class="main-body">
-    <ul class="grid">
-      <li>
-        <div class="left-column">
-          <font class="title" size="5">
-            <b>Welcome</b>
-          </font>
-          <div class="main-text">
-            <p>
-              Welcome! You have found your way to my personal website. My name is Dzu, as you probaly
-              know and I am a programmer. I currently live in Bentonville, AR working for a small company 
-              named Walmart. I started my career here in early 2017 on a team called Eden. I am a backend 
-              programmer working on the api services for our suite of apps. You can learn a little more 
-              about Eden down below as you keep on skimming the site. If you kept on reading up until now
-              then I am impressed because I am running out of things to say. Well let me tell you a little fun fact,
-              you breathe on average about 8,409,600 times a year, better start keeping track to see 
-              if I'm right. 
-            </p>
-          </div>
-    
-          <div class="jobs">
-            <font class="title" size="5">
-              <b>Project</b>
-            </font>
-  
-            <div class="main-text">
-              <font size="5"><b>Ipsumtempor icident</b></font><br>
-              <div class="job-list">
-                <div class="sub-text">Lorem ipsumtempor incididunt ut labore et dolore magna aliqua</div> 
-                  <ul>
-                    <p>
-                      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-                      <li>Amet massa vitae tortor condimentum lacinia quis.</li>
-                      <li>Commodo elit at imperdiet dui accumsan sit amet nulla facilisi</li>
-                    </p> 
-                  </ul>      
-              </div>
-              <br>
-              <font size="5"><b>Ipsumtempor icident</b></font><br>
-              <div class="job-list">
-                <div class="sub-text">Lorem ipsumtempor incididunt ut labore et dolore magna aliqua</div>
-                <ul>
-                  <p>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit </li>
-                    <li>Amet massa vitae tortor condimentum lacinia quis.</li>
-                    <li>Commodo elit at imperdiet dui accumsan sit amet nulla facilisi</li>
-                  </p>
-                </ul>
-              </div>
-  
-            </div>
-          </div> <!--jobs-->
-        </div>
-      </li>
+<!-- Router Outlet -->
+<router-outlet class="wrapper"></router-outlet>
 
-
-      <li>
-        <div class="right-column">
-          <font class="title" size="5">
-            <b>Background</b>
-          </font>
-    
-          <div class="main-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-              Id semper risus in hendrerit gravida. Blandit volutpat maecenas volutpat blandit aliquam etiam. Ipsum dolor sit amet consectetur 
-              adipiscing. Elementum nibh tellus molestie nunc non blandit. Vel risus commodo viverra maecenas accumsan lacus vel facilisis. 
-              Arcu non sodales neque sodales ut etiam sit. Condimentum lacinia quis vel eros donec ac odio tempor orci.Proin libero nunc consequat 
-              interdum varius sit amet mattis vulputate. Eleifend mi in nulla posuere.</p>
-  
-            <p>Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo. Malesuada fames ac turpis egestas integer eget. 
-              Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Diam in arcu cursus euismod quis viverra nibh. Mi proin 
-              sed libero enim sed. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in. Amet massa vitae tortor 
-              condimentum lacinia. Placerat in egestas erat imperdiet sed euismod nisi porta lorem. Urna nec tincidunt praesent semper feugiat.
-              Tincidunt dui ut ornare lectus.</p>
-  
-            <p>Tellus molestie nunc non blandit massa enim nec dui nunc. Augue ut lectus arcu bibendum at varius vel pharetra vel. 
-              Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Ultrices eros in cursus turpis massa tincidunt dui. In 
-              aliquam sem fringilla ut morbi tincidunt. Fermentum posuere urna nec tincidunt. Amet justo donec enim diam vulputate ut 
-              pharetra sit. Aliquam id diam maecenas ultricies mi. Egestas fringilla phasellus faucibus scelerisque eleifend donec. Ut faucibus pulvinar
-              elementum integer enim neque volutpat. Nunc sed velit dignissim sodales ut eu sem integer. Lacus luctus accumsan tortor posuere ac. 
-              Nisl purus in mollis nunc sed id semper. Elementum curabitur vitae nunc sed. Vestibulum sed arcu non odio. Risus viverra
-              adipiscing at in tellus integer feugiat scelerisque varius. Luctus venenatis lectus magna fringilla. Mauris augue neque gravida in fermentum et. 
-              Tristique senectus et netus et malesuada fames ac turpis.</p>
-          </div>
-        </div>
-      </li>
-
-    </ul>
-  </section>
-</section>
-
-<section class="picture-wall">
-  <!-- <ul class="grid">
-    <li class="small image1" [style.background]="'url(./assets/img/coast.jpg)'"><</li>
-    <li class="large image2" [style.background]="'url(./assets/img/island.jpg)'"></li>
-    <li class="large image3" [style.background]="'url(./assets/img/balloon.jpg)'"></li>
-    <li class="small image4" [style.background]="'url(./assets/img/mountain.jpg)'"></li>
-  </ul> -->
-
-  <ul class="grid">
-      <li class="small" style="background-image: url(assets/img/coast.jpg);"></li>
-      <li class="large" style="background-image: url(assets/img/island.jpg);"></li>
-      <li class="large" style="background-image: url(assets/img/balloon.jpg);"></li>
-      <li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
-  </ul>
-</section>
-
-<section class="features">
-  <h3 class="title">Stop reading this section</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-
-  <ul class="grid">
-    <li>
-      <i class="fa fa-camera-retro"></i>
-      <h4>Photography</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-    </li>
-    <li>
-      <i class="fa fa-cubes"></i>
-      <h4>Web Development</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-    </li>
-    <li>
-      <i class="fa fa-newspaper-o"></i>
-      <h4>Content Editing</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
-    </li>
-  </ul>
-</section>
-
-
-<section class="reviews">
-  <h3 class="title">What others say:</h3>
-
-  <p class="quote">Mauris sit amet mauris a arcu eleifend ultricies eget ut dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-  <p class="author">— Some Old Guy</p>
-
-  <p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-  <p class="author">— My Dog</p>
-
-  <p class="quote">Donec commodo dolor augue, vitae faucibus tortor tincidunt in. Aliquam vitae leo quis mi pulvinar ornare. Integer eu iaculis metus.</p>
-  <p class="author">— Steve from next door</p>
-</section>
-
-<section class="contact">
-  <h3 class="title">Don't join our newsletter</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
-
-  <form>
-    <input type="email" placeholder="Email">
-    <a href="#" class="btn">Subscribe now at your own risk</a>
-  </form>
-</section>
-
-<footer>
+<footer class="footer">
   <ul>
     <li><a href="mailto:dzutpham@gmail.com"><i class="fa fa-envelope"></i></a></li>
     <li><a href="https://www.linkedin.com/in/dzu-pham-54b05457/"><i class="fa fa-linkedin-square"></i></a></li>
